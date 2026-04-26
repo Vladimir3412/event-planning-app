@@ -1,0 +1,26 @@
+@import 'tailwindcss';
+
+:root {
+    --font-size: 16px;
+    --background: #ffffff;
+    --header: #ffffff;
+    --content: #f0f0f0;
+    --foreground: #111111;
+    --border: #e5e5e7;
+}
+
+.dark {
+    --background: #17171c;
+    --header: #1a1a1f;
+    --content: #101116;
+    --foreground: #f3f3f5;
+    --border: #444449;
+}
+
+@theme inline {
+    --color-background: var(--background);
+    --color-header: var(--header);
+    --color-content: var(--content);
+    --color-foreground: var(--foreground);
+    --color-border: var(--border);
+}
