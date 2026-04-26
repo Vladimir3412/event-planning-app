@@ -192,7 +192,6 @@ export const EventDetail = ({ event, onUpdateTasks, onUpdatePolls, onUpdateExpen
                     <Tabs.Tab value="expenses">Расходы ({event.expenses.length})</Tabs.Tab>
                 </Tabs.List>
 
-                {/* ЗАДАЧИ */}
                 <Tabs.Panel value="tasks">
                     <div className="flex flex-col gap-2">
                         {event.tasks.map((task) => (
@@ -258,7 +257,6 @@ export const EventDetail = ({ event, onUpdateTasks, onUpdatePolls, onUpdateExpen
                     </div>
                 </Tabs.Panel>
 
-                {/* ГОЛОСОВАНИЕ */}
                 <Tabs.Panel value="votes">
                     <div className="flex flex-col gap-3">
                         {event.polls.length === 0 && (
@@ -347,7 +345,6 @@ export const EventDetail = ({ event, onUpdateTasks, onUpdatePolls, onUpdateExpen
                     </Modal>
                 </Tabs.Panel>
 
-                {/* РАСХОДЫ */}
                 <Tabs.Panel value="expenses">
                     <div className="flex flex-col gap-2">
                         {event.expenses.map((exp) => (

@@ -19,7 +19,6 @@ const HomePageManage = () => {
     const [selectedEventId, setSelectedEventId] = useState<number | null>(null)
     const selectedEvent = events.find((e) => e.id === selectedEventId) ?? null
 
-    // модалка
     const [modal, setModal] = useState(false)
     const [title, setTitle] = useState('')
     const [date, setDate] = useState<string>('')
